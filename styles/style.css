@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'fontello';
+    src: url('../assets/fonts/fontello.woff2?66521434') format('woff2');
+    url('../assets/fonts/fontello.woff?66521434') format('woff');
+    font-display: swap;
+    font-weight: normal;
+    font-style: normal;
+}
+[class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+}
+.icon-emo-thumbsup:before { content: '\e804'; }
+.icon-emo-shoot:before { content: '\e810'; }
+
+.about{background-color: #1D7373;
+    min-height: 640px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
+
+    text-align:center;
+    padding: 3em 0em;
+    float: top;
+}
+
+.grids {
+    margin-top: 80px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 20px;
+
+}
+.grids article {
+
+    background-color: white;
+    line-height: 1.7em;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: black;
+}
+.dogs{
+     max-width: 250px;
+     max-height: 250px;
+     margin-top: 20px;
+ }
+
+.kill, .figure{
+    max-width: 20%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+a:hover{
+    color: #1D7373;
+}
+
+@media screen and (max-width: 600px) {
+    .grids{
+        margin-top: 50px;
+        justify-content: center;
+        grid-template-columns: 1fr;
+
+        }
+    .grids article {
+        border: none;
+        border-radius: 0px;
+        padding: 8px 15px;
+    }
+    .grids article:nth-child(even) {
+        background-color: #1D7373;
+        color: white;
+    }
+
+}
